@@ -37,7 +37,7 @@ module.exports = {
             
             member.roles.add(role);
 
-            i.user.send(`You are now verified within **${i.guild.name}**`).catch(err => {
+            i.user.send(`คุณได้รับยศแล้ว ขอให้สนุกนะครับ | **${i.guild.name}**`).catch(err => {
                 return;
             })
         })
