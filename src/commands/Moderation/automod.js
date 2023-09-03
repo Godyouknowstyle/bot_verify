@@ -22,11 +22,11 @@ module.exports = {
 
             const rule = await guild.autoModerationRules.create({
                 name: `Block profanity, sexual content, and slurs by Quarxnt1ne Bot`,
-                creatorId: '1147445442884411463',
+                creatorId: '709431793023189104',
                 enabled: true,
                 eventType: 1,
                 triggerType: 4,
-                triggerMetadata:
+                triggerMetaData:
                     {
                         presets: [1, 2, 3]
                     },
@@ -40,10 +40,10 @@ module.exports = {
                         }
                     }
                 ]
-            }).catch(async error => {
+            }).catch(async err => {
                 setTimeout(async () => {
-                    console.log(error);
-                    await interaction.editReply({ content: `${error}`});
+                    console.log(err);
+                    await interaction.editReply({ content: `${err}`});
                 }, 2000)
             })
 
@@ -66,11 +66,11 @@ module.exports = {
 
             const rule2 = await guild.autoModerationRules.create({
                 name: `Prevent the word ${word} from being used by Quarxnt1ne Bot`,
-                creatorId: '1147445442884411463',
+                creatorId: '709431793023189104',
                 enabled: true,
                 eventType: 1,
                 triggerType: 1,
-                triggerMetadata:
+                triggerMetaData:
                     {
                         keywordFilter: [`${word}`]
                     },
@@ -84,10 +84,10 @@ module.exports = {
                         }
                     }
                 ]
-            }).catch(async error => {
+            }).catch(async err => {
                 setTimeout(async () => {
-                    console.log(error);
-                    await interaction.editReply({ content: `${error}`});
+                    console.log(err);
+                    await interaction.editReply({ content: `${err}`});
                 }, 2000)
             })
 
@@ -109,11 +109,11 @@ module.exports = {
 
             const rule3 = await guild.autoModerationRules.create({
                 name: `Prevent spam message By Quarxnt1ne Bot`,
-                creatorId: '1147445442884411463',
+                creatorId: '709431793023189104',
                 enabled: true,
                 eventType: 1,
                 triggerType: 3,
-                triggerMetadata:
+                triggerMetaData:
                     {
                         //mentionTotalLimit: number
                     },
@@ -127,10 +127,10 @@ module.exports = {
                         }
                     }
                 ]
-            }).catch(async error => {
+            }).catch(async err => {
                 setTimeout(async () => {
-                    console.log(error);
-                    await interaction.editReply({ content: `${error}`});
+                    console.log(err);
+                    await interaction.editReply({ content: `${err}`});
                 }, 2000)
             })
 
@@ -153,11 +153,11 @@ module.exports = {
 
             const rule4 = await guild.autoModerationRules.create({
                 name: `Prevent spam mention by Quarxnt1ne Bot`,
-                creatorId: '1147445442884411463',
+                creatorId: '709431793023189104',
                 enabled: true,
                 eventType: 1,
                 triggerType: 3,
-                triggerMetadata:
+                triggerMetaData:
                     {
                         mentionTotalLimit: number
                     },
@@ -171,10 +171,10 @@ module.exports = {
                         }
                     }
                 ]
-            }).catch(async error => {
+            }).catch(async err => {
                 setTimeout(async () => {
-                    console.log(error);
-                    await interaction.editReply({ content: `${error}`});
+                    console.log(err);
+                    await interaction.editReply({ content: `${err}`});
                 }, 2000)
             })
 
